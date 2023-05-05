@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Music Through The Years</title>
+    <style>
+      body {
+        background-color: #1DB954;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 48px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+      }
+      form {
+        margin-bottom: 40px;
+      }
+      input[type=number] {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        color: white;
+        font-size: 24px;
+        margin-right: 20px;
+        width: 100px;
+      }
+      input[type=number]:focus {
+        outline: none;
+      }
+      button[type=submit] {
+        background-color: white;
+        border: none;
+        border-radius: 20px;
+        color: #1DB954;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px 20px;
+      }
+      button[type=submit]:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid white;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #1DB954;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Music Through The Years</h1>
+    <form method="post" action="/">
+      <p>Year: <input type="number" min="1900" max="2022" name="year" value="{{ value }}"> <button type="submit">Go</button></p>
+    </form>
+    {songs}
+  </body>
+</html>
