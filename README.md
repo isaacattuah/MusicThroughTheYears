@@ -35,6 +35,8 @@ This will start the Flask app on port `81`.
 
 Once the app is running, open your web browser and go to `http://localhost:81/`. You should see the app's homepage.
 
+Need an easier way? [Run the app on Repl.it here](https://replit.com/@isaacattuah/MusicThroughTheYears)
+
 ## Using the App
 
 To search for tracks from a particular year, enter the year into the input field and click the "Go" button. The app will retrieve the top 10 tracks from that year and display them in a table.
